@@ -25,16 +25,18 @@ jobs:
       run: npm run build
 
     - name: Push dist folder to deploy branch
+      env:
+        GH_PAT: ${{ secrets.GH_PAT }}
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-        # Clone deploy branch into a temp folder
-        git clone --branch deploy https://github.com/dataseatech/dataseatech.git deploy
+        git clone --branch deploy https://x-access-token:${GH_PAT}@github.com/dataseatech/dataseatech.git deploy
         rm -rf deploy/*
         cp -r dist/* deploy/
         cd deploy
         git add .
         git commit -m "Deploy from GitHub Actions" || echo "Nothing to commit"
         git push origin deploy
+
 
