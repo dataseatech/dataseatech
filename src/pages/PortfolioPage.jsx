@@ -252,7 +252,7 @@ const PortfolioPage = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { number: '500+', label: 'Projects Completed' },
-              { number: '50+', label: 'Enterprise Clients' },
+              { number: '8+', label: 'Enterprise Clients' },
               { number: '40%', label: 'Average Cost Reduction' },
               { number: '99.9%', label: 'System Uptime' }
             ].map((stat, index) => (

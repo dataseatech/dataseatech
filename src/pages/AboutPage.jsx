@@ -56,7 +56,7 @@ const AboutPage = () => {
     {
       year: '2023',
       title: 'Global Reach',
-      description: 'Established partnerships across 3 continents and 50+ enterprise clients.',
+      description: 'Established partnerships across 3 continents and 8+ enterprise clients.',
       imageAlt: 'Globe icon with connecting lines, year 2023',
       imageKeywords: 'global reach globe connections 2023 animation'
     },
@@ -303,7 +303,7 @@ const AboutPage = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { icon: Users, number: '50+', label: 'Team Members', imageAlt: 'Icon representing team members', imageKeywords: 'team members icon animation' },
-              { icon: Award, number: '500+', label: 'Projects Delivered', imageAlt: 'Icon representing an award for projects', imageKeywords: 'projects delivered award icon animation' },
+              { icon: Award, number: '15+', label: 'Projects Delivered', imageAlt: 'Icon representing an award for projects', imageKeywords: 'projects delivered award icon animation' },
               { icon: TrendingUp, number: '40%', label: 'Average Cost Savings', imageAlt: 'Icon of a graph trending upwards for cost savings', imageKeywords: 'cost savings graph icon animation' },
               { icon: Target, number: '99.9%', label: 'Client Satisfaction', imageAlt: 'Icon of a target hit, representing client satisfaction', imageKeywords: 'client satisfaction target icon animation' }
             ].map((stat, index) => (

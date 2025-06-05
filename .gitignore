@@ -4,4 +4,5 @@ config.json
 firebaseConfig.js
 supabaseConfig.js
 *.pem,*.key,id_rsa, id_rsa.pub
-.cache/
+.cache/git
+privateNotes.txt

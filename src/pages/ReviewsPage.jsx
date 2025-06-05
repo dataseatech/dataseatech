@@ -103,8 +103,8 @@ const ReviewsPage = () => {
   const stats = [
     { number: '4.9/5', label: 'Average Rating' },
     { number: '98%', label: 'Client Retention' },
-    { number: '50+', label: 'Enterprise Clients' },
-    { number: '500+', label: 'Projects Completed' }
+    { number: '8+', label: 'Enterprise Clients' },
+    { number: '15+', label: 'Projects Completed' }
   ];
 
   return (

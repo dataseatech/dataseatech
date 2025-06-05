@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const StatsSection = () => {
   const stats = [
-    { number: '500+', label: 'Projects Delivered' },
-    { number: '50+', label: 'Enterprise Clients' },
+    { number: '15+', label: 'Projects Delivered' },
+    { number: '8+', label: 'Enterprise Clients' },
     { number: '40%', label: 'Cost Reduction' },
     { number: '99.9%', label: 'Uptime Achieved' }
   ];
