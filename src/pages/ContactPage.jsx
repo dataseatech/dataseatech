@@ -49,7 +49,7 @@ const ContactPage = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: '+91 9703322554000',
+      details: '+91 9703322554',
       description: 'Mon-Fri from 9am to 7pm IST',
       imageAlt: 'Stylized phone icon',
       imageKeywords: 'phone icon'
@@ -76,7 +76,7 @@ const ContactPage = () => {
     {
       city: 'Hyderabad (HQ)',
       address: 'DataSeaTech, SDH2, Nallagandla, Hyderabad, India',
-      phone: '+91 9703322554000',
+      phone: '+91 9703322554',
       email: 'info@dataseatech.com',
       imageAlt: 'Hyderabad skyline with Charminar or Hi-Tech City',
       imageKeywords: 'Hyderabad city skyline'
