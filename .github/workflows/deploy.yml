@@ -1,0 +1,36 @@
+name: Auto Build & Deploy to deploy_branch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout source code
+      uses: actions/checkout@v3
+
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: npm run build
+
+    - name: Deploy dist/ to deploy_branch branch
+      run: |
+        cd dist
+        git init
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add .
+        git commit -m "Auto-deploy"
+        git branch -M deploy_branch
+        git push -f https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/dataseatech/dataseatech.git deploy_branch
